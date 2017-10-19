@@ -1,7 +1,10 @@
-package com.spring.data.hello;
+package com.spring.data.dao;
 
+import com.spring.data.pojo.Person;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 
 /**
@@ -10,4 +13,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface PersonRepository extends JpaRepository<Person, Long>
 {
+    List<Person> findPersonByFirstName(String firstName);
 }

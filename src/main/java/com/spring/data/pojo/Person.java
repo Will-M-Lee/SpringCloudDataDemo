@@ -1,6 +1,7 @@
-package com.spring.data.hello;
+package com.spring.data.pojo;
 
 import lombok.Data;
+
 import javax.persistence.*;
 
 
