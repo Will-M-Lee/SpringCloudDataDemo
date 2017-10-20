@@ -21,4 +21,9 @@ public class PersonService
     {
         return personRepository.findPersonByFirstName(firstName);
     }
+
+    public List<Person> findPersonByFirstNameLikeOrderByLastName(String firstName)
+    {
+        return personRepository.findPersonByFirstNameLikeOrderByLastName("%"+firstName+"%");
+    }
 }
